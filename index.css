@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen;  
+    box-sizing: border-box;
+}
+body{
+    display:grid;
+    grid-template-columns:10% auto 10%;
+    padding: 5% 0;
+    font-family: arial
+}
+body *{
+    grid-column:2;
+}
+.my-api {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom:2em;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+   
+}
+.my-api div{
+    padding:1em;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+.my-api-name {
+    grid-column:span 2;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.my-api-description {
+    grid-column:span 2;
+}
+.my-api-auth {
+    grid-column:span 1;
+}
+.my-api-https {
+    grid-column:span 1;
+}
